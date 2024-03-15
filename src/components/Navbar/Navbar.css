@@ -1,0 +1,41 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+}
+.logo-menu{
+    display: flex;
+    align-items: center;
+    
+}
+.logo{
+    align-self: center;
+    padding: 2rem 4rem;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+}
+.menu ul li{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+.cart-profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.cart{
+    padding: .5rem .5rem;
+    border-radius: 50%;
+}
+.cart:hover{
+    background-color: rgb(215, 215, 215);
+}
+.profile img{
+    width: 4rem;
+}
