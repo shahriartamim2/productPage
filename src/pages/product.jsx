@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useContext} from "react";
+import { counterContext } from "../counter";
 import { useState } from "react";
 import ip1t from "D:/Front End By React/productPage/src/images/image-product-1-thumbnail.jpg";
 import ip2t from "D:/Front End By React/productPage/src/images/image-product-2-thumbnail.jpg";
@@ -21,8 +22,11 @@ import close from "D:/Front End By React/productPage/src/images/icon-close.svg";
 
 const Product = () => {
 
+  const value = useContext(counterContext)
+
   const [ishidden, setishidden] = useState(true);
   const [largePhoto, setlargePhoto] = useState(ip1)
+
 
   const showPhoto = () => {
     if (ishidden) {
@@ -69,6 +73,22 @@ const Product = () => {
     }
   };
 
+  const countPlus=()=>{
+    value.setcount(value.count + 1)
+  };
+
+
+  const countMinus = () => {
+    if(value.count>0){
+      value.setcount(value.count - 1);
+    }
+  };
+
+  const addInCart=()=>{
+    value.setcartCount(value.cartCount + value.count)
+    value.setcount(0)
+  }
+
   return (
     <>
       <section className="hero">
@@ -107,15 +127,15 @@ const Product = () => {
           </div>
           <div className="addcart">
             <div className="productcount">
-              <div className="plus">
+              <div onClick={countMinus} className="plus">
                 <img src={minus} alt="" />
               </div>
-              <div className="count">0</div>
-              <div className="minus">
+              <div className="count">{value.count}</div>
+              <div onClick={countPlus} className="minus">
                 <img src={plus} alt="" />
               </div>
             </div>
-            <div className="addtocart">
+            <div onClick={addInCart} className="addtocart">
               <img src={cart} alt="" />
               <span>Add to cart</span>
             </div>

@@ -32,9 +32,22 @@
 .cart{
     padding: .5rem .5rem;
     border-radius: 50%;
+    position: relative;
+
+    & .cartcount{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        font-weight: 700;
+        background-color: orangered;
+        padding: 3px;
+        border-radius: 1rem;
+        top: -40%;
+        right: -10%;
+    }
 }
 .cart:hover{
-    background-color: rgb(215, 215, 215);
+    background-color: rgb(235, 235, 235);
 }
 .profile img{
     width: 4rem;
