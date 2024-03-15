@@ -1,20 +1,20 @@
 import React,{useContext} from "react";
 import { counterContext } from "../counter";
 import { useState } from "react";
-import ip1t from "D:/Front End By React/productPage/src/images/image-product-1-thumbnail.jpg";
-import ip2t from "D:/Front End By React/productPage/src/images/image-product-2-thumbnail.jpg";
-import ip3t from "D:/Front End By React/productPage/src/images/image-product-3-thumbnail.jpg";
-import ip4t from "D:/Front End By React/productPage/src/images/image-product-4-thumbnail.jpg";
-import ip1 from "D:/Front End By React/productPage/src/images/image-product-1.jpg";
-import ip2 from "D:/Front End By React/productPage/src/images/image-product-2.jpg";
-import ip3 from "D:/Front End By React/productPage/src/images/image-product-3.jpg";
-import ip4 from "D:/Front End By React/productPage/src/images/image-product-4.jpg";
-import plus from "D:/Front End By React/productPage/src/images/icon-plus.svg";
-import minus from "D:/Front End By React/productPage/src/images/icon-minus.svg";
-import cart from "D:/Front End By React/productPage/src/images/icon-cart.svg";
-import previous from "D:/Front End By React/productPage/src/images/icon-previous.svg";
-import next from "D:/Front End By React/productPage/src/images/icon-next.svg";
-import close from "D:/Front End By React/productPage/src/images/icon-close.svg";
+import ip1t from "../images/image-product-1-thumbnail.jpg";
+import ip2t from "../images/image-product-2-thumbnail.jpg";
+import ip3t from "../images/image-product-3-thumbnail.jpg";
+import ip4t from "../images/image-product-4-thumbnail.jpg";
+import ip1 from "../images/image-product-1.jpg";
+import ip2 from "../images/image-product-2.jpg";
+import ip3 from "../images/image-product-3.jpg";
+import ip4 from "../images/image-product-4.jpg";
+import plus from "../images/icon-plus.svg";
+import minus from "../images/icon-minus.svg";
+import cart from "../images/icon-cart.svg";
+import previous from "../images/icon-previous.svg";
+import next from "../images/icon-next.svg";
+import close from "../images/icon-close.svg";
 
 
 

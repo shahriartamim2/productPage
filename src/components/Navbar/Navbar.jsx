@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { counterContext } from "../../counter";
 import "./Navbar.css";
-import logo from "d:/Front End By React/productPage/src/images/logo.svg";
-import cart from "d:/Front End By React/productPage/src/images/icon-cart.svg";
-import avatar from "d:/Front End By React/productPage/src/images/image-avatar.png";
+import logo from "../../images/logo.svg";
+import cart from "../../images/icon-cart.svg";
+import avatar from "../../images/image-avatar.png";
 
 const Navbar = () => {
 
