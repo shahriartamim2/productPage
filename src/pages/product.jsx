@@ -153,15 +153,15 @@ const Product = () => {
             <div onClick={swipeRight} className="next">
               <img src={next} alt="" />
             </div>
-            <div className="close" onClick={showPhoto}>
-              <img src={close} alt="" />
-            </div>
           </div>
           <div className="small">
             <img onClick={cngPhoto} src={ip1t} alt="img1" />
             <img onClick={cngPhoto} src={ip2t} alt="img2" />
             <img onClick={cngPhoto} src={ip3t} alt="img3" />
             <img onClick={cngPhoto} src={ip4t} alt="img4" />
+          </div>
+          <div className="close" onClick={showPhoto}>
+            <img src={close} alt="" />
           </div>
         </div>
       </div>
