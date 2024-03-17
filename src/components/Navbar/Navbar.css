@@ -34,7 +34,7 @@
     padding: .5rem .5rem;
     border-radius: 50%;
     position: relative;
-
+    transition: 1s ease-in-out;
     & .cartcount{
         position: absolute;
         color: rgb(255, 255, 255);
@@ -45,11 +45,15 @@
         border-radius: 1rem;
         top: -40%;
         right: -10%;
+        
     }
 }
 .cart:hover{
-    background-color: rgb(235, 235, 235);
+    scale: 1.1;
 }
+
+
+
 .profile img{
     width: 4rem;
 }
